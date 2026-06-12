@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTec Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <img src="img/logo-agrotec.png" alt="Logo AgroTec" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projeto">O Projeto</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-section">
+        <img src="img/banner.png" alt="Banner AgroTec Sustentável" class="banner-img">
+        <div class="banner-text">
+            <h1>AgroTec Sustentável</h1>
+            <p>Projeto Agrinho 2026 - Agro forte, futuro sustentável.</p>
+        </div>
+    </section>
+
+    <section id="sobre" class="container section">
+        <h2>Sobre o Projeto</h2>
+        <p>O <strong>AgroTec Sustentável</strong> é uma iniciativa desenvolvida para o programa Agrinho 2026. Nosso objetivo é unificar a tecnologia moderna com as práticas agrícolas tradicionais, promovendo o uso consciente de recursos, a automação inteligente e a preservação do meio ambiente para garantir um futuro próspero e sustentável no campo.</p>
+    </section>
+
+    <section id="projeto" class="container section grid-2">
+        <div class="card">
+            <h3>Comedouro Inteligente</h3>
+            <img src="img/comedouro.png" alt="Comedouro Inteligente" class="project-img">
+            <p>Sistema automatizado que evita o desperdício de ração, liberando a quantidade exata com base no peso e na demanda dos animais, reduzindo custos e pegada ecológica.</p>
+        </div>
+        <div class="card">
+            <h3>Maquete Geral do Sistema</h3>
+            <img src="img/maquete-geral.png" alt="Maquete Geral do Projeto" class="project-img">
+            <p>Visão integrada de nossa propriedade sustentável, demonstrando a captação de água da chuva, energia solar e o gerenciamento inteligente de dados.</p>
+        </div>
+    </section>
+
+    <section id="simulador" class="container section simulator-section">
+        <h2>Simulador de Economia AgroTec</h2>
+        <p>Insira a área da sua produção (em hectares) para estimar a economia de água e recursos usando o nosso sistema.</p>
+        
+        <div class="simulator-box">
+            <label for="hectares">Tamanho da propriedade (Hectares):</label>
+            <input type="number" id="hectares" placeholder="Ex: 5" min="1">
+            <button id="btn-calcular">Calcular Economia</button>
+            
+            <div id="resultado" class="hidden">
+                <h3>Resultado Estimado:</h3>
+                <p>💧 <strong>Água poupada:</strong> <span id="res-agua">0</span> litros/mês.</p>
+                <p>📉 <strong>Redução de desperdício:</strong> <span id="res-desperdicio">0</span>% de insumos.</p>
+                <p>🌱 <strong>Pontuação de Sustentabilidade:</strong> <span id="res-nota">A+</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgroTec Sustentável - Projeto Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
